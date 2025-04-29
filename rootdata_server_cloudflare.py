@@ -1300,7 +1300,7 @@ async def getProjectsByTags(tag_ids: str) -> Dict[str, Any]:
 
 # ----- Run the server -----
 if __name__ == "__main__":
-    mcp.run(transport="sse", host="127.0.0.1", port=8000)
+    mcp.run(transport="sse")
     # mcp.run(transport="stdio")
     # import asyncio
 
