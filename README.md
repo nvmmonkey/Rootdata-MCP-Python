@@ -53,6 +53,17 @@ cp .env.example .env
 ```
 ROOTDATA_API_KEY=your_api_key_here
 ```
+### Claude Desktop Integration (For Regular Use)
+
+Use `fastmcp install` to set up your server for persistent use within the Claude Desktop app. It handles creating an isolated environment using `uv`.
+
+```bash
+fastmcp install your_server_file.py
+# With a custom name in Claude
+fastmcp install your_server_file.py --name "My Analysis Tool"
+# With extra packages and environment variables
+fastmcp install server.py --with requests -v API_KEY=123 -f .env
+```
 
 ## Usage
 
